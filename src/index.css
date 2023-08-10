@@ -25,19 +25,57 @@
 
 .gradient,
 .active {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+ position: relative;
 }
 
-.active {
-  color: #fff;
-  padding: 1rem;
-  border-radius: 100%;
+.gradient,
+.active:hover::before {
+ background-color: #1d9bf0;
+ position: absolute;
+ content: '';
+ right: 0;
+ bottom: 0;
+ height: 2px;
+ width: 100%;
+}
+
+.active-on::before{
+  background-color: #1d9bf0;
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.shad{
+  box-shadow: 0px 2px 4px rgb(35, 34, 34);
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: black;
+  border: none;
+  outline: none;
+  background: black;
+  border-radius: 50%;
+  overflow: hidden
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  color: black; 
+  outline: none;
+  background-color: black
 }
 
 @layer base {
@@ -51,6 +89,9 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-tweet {
     @apply rounded-full font-primary text-white font-medium;
   }
   .btn-sm {
@@ -68,4 +109,9 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+  .navigation{
+    @apply min-[320px]:translate-x-[150%] min-[320px]:duration-500 min-[320px]:transition-all
+  }
 }
+
+

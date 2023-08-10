@@ -1,37 +1,79 @@
-import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import { BsBriefcase, BsChatSquareText } from 'react-icons/bs';
+import { Link } from "react-scroll";
+import { useState } from "react";
 
-import { Link } from 'react-scroll';
-
-const Nav = () => {
-    return (
-        <nav className='fixed bottom-2 lg:bottom-4 w-full overflow-hidden z-50'>
-            <div className='container mx-auto'>
-                <div className='w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50'>
-                    <Link to='home' activeClass='active'
+const Navbar: React.FC = () => {
+  const [show, setShow] = useState(false) 
+  return (
+    <nav className="">
+      <div className="min-[320px]:hidden md:block max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="md:flex md:items-center md:justify-center md:gap-8 md:h-16">
+                  <Link to='home' activeClass='active-on'
                     smooth={true}
-                    spy={true} offset={-200} className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
-                        <BiHomeAlt /> 
+                    spy={true} offset={-200} className='cursor-pointer active text-black'>
+                        Home
                     </Link>
-                    <Link to='about'activeClass='active'
+                    <Link to='skills' activeClass='active-on'
                     smooth={true}
-                    spy={true}  className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
-                        <BiUser />
+                    spy={true} offset={-10} className='cursor-pointer active text-black'>
+                        Skills 
                     </Link>
-                    <Link to='work' activeClass='active'
+                    <Link to='about'activeClass='active-on'
                     smooth={true}
-                    spy={true} className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
-                        <BsBriefcase />
+                    spy={true}  className='cursor-pointer  active text-black'>
+                        About
                     </Link>
-                    <Link to='contact' activeClass='active'
+                    <Link to='work' activeClass='active-on'
                     smooth={true}
-                    spy={true} className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
-                        <BsChatSquareText />
+                    spy={true} offset={15} className='cursor-pointer  active text-black'>
+                        Projects
                     </Link>
+                    <Link to='contact' offset={-40} activeClass='active-on'
+                    smooth={true}
+                    spy={true} className='cursor-pointer  active text-black'>
+                        Contact
+                    </Link>
+        </div>  
+      </div>
+      <div className="flex flex-col gap-1 min-[320px]-block md:hidden absolute top-2 right-5 bg-black p-2 rounded-md" onClick={()=> setShow(!show)}>
+        {/* <FaBars /> */}
+        <span className="w-[20px] h-[2px] bg-white rounded-sm"></span>
+        <span className="w-[20px] h-[3px] bg-white rounded-sm"></span>
+        <span className="w-[20px] h-[2px] bg-white rounded-sm"></span>
+      </div>
+      {show && (
+        <nav className="absolute top-[50px] left-0 h-[100vh] w-[100%] bg-white rounded-sm md:hidden">
+          <div className={show ? "min-[320px]:transition-all min-[320px]:duration-500 min-[320px]:translate-x-[0%] md:hidden max-w-7xl mx-auto min-[320px]:p-4" : "min-[320px]:translate-x-[150%] md:hidden max-w-7xl mx-auto px-2 sm:px-6 "}>
+          <div className="flex flex-col items-start sm:items-center justify-center gap-4 p-1" onClick={()=> setShow(!show)}>
+                    <Link to='home' 
+                      smooth={true}
+                      spy={true} offset={-200} className='cursor-pointer active text-black'>
+                          Home
+                      </Link>
+                      <Link to='skills' 
+                      smooth={true}
+                      spy={true} offset={-20} className='cursor-pointer active text-black'>
+                          Skills
+                      </Link>
+                      <Link to='about' 
+                      smooth={true}
+                      spy={true}  className='cursor-pointer  active text-black'>
+                          About
+                      </Link>
+                      <Link to='work' 
+                      smooth={true}
+                      spy={true} offset={5} className='cursor-pointer  active text-black'>
+                          Projects
+                      </Link>
+                      <Link to='contact' 
+                      smooth={true}
+                      spy={true} offset={-10} className='cursor-pointer  active text-black'>
+                          Contact
+                      </Link>
+          </div>  
                 </div>
-            </div>
-        </nav>
-    );
+        </nav>)}
+    </nav>
+  );
 };
 
-export default Nav;
+export default Navbar;
