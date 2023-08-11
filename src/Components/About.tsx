@@ -9,6 +9,10 @@ const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   })
+  const birthdate = new Date('2002-01-25');
+  const currentDate = new Date();
+  const age = currentDate.getFullYear() - birthdate.getFullYear();
+
   return (
     <section className="section pb-[50%] md:pb-[50%] lg:pb-[0]" id="about" ref={ref}>
       <div className="container mx-auto">
@@ -18,8 +22,8 @@ const About = () => {
           </motion.div>
           <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}} className="flex-1">
             <h2 className="h2 text-[#0F1419]">About me.</h2>
-            <h3 className="h3 mb-4 text-[#0F1419]">I'm a Front-end Developer with no degree.</h3>
-            <p className="mb-6 text-[#0F1419]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Dolor natus omnis inventore quas beatae illo nulla. Officiis magni omnis molestias.</p>
+            <h3 className="h3 mb-4 text-[#0F1419]">I'm Self taught frontend developer</h3>
+            <p className="mb-6 text-[#0F1419] font-medium">My name is vedant naik <br />I am {age} years old <br />I have only completed my higher secondary education<br />I am from Goa, India</p>
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div className="">
                 <div className="text-[40px] font-tertiary text-[#0F1419] mb-2">
@@ -29,7 +33,7 @@ const About = () => {
               </div>
               <div className="">
                 <div className="text-[40px] font-tertiary text-[#0F1419] mb-2">
-                  {inView ? <Countup start={0} end={100} duration={3}/>: null}+
+                  {inView ? <Countup start={0} end={50} duration={3}/>: null}+
                 </div>
                 <div className="font-primary text-sm tracking-[2px] text-[#0F1419]">Projects<br/>Completed</div>
               </div>
