@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Nav from "./Nav"
+import Vedant from '../images/vedant.jpg'
 
 const Header = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -53,8 +54,9 @@ useEffect(()=>{
       >
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
-            <a href="#" className="">
-              <h1 className='text-[#1d9bf0] font-bold'>My Portfolio</h1>
+            <a href="#" className="flex items-center gap-x-1">
+              <img src={Vedant} alt="person-img" className="h-10 w-10 rounded-full object-cover"/>
+              <h1 className='text-[#1d9bf0] font-bold'>Vedant.Dev</h1>
             </a>
             <Nav />
           </div>
