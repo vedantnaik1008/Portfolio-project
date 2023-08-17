@@ -56,7 +56,7 @@ useEffect(()=>{
           <div className="flex justify-between items-center">
             <a href="#" className="flex items-center gap-x-1">
               <img src={Vedant} alt="person-img" className="h-10 w-10 rounded-full object-cover"/>
-              <h1 className='text-[#1d9bf0] font-bold'>Vedant.Dev</h1>
+              <h1 className='text-[#1d9bf0] font-bold font-cursi'>Vedant.Dev</h1>
             </a>
             <Nav />
           </div>

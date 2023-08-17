@@ -1,4 +1,4 @@
-import img1 from '../images/cards.png'
+import img1 from '../images/Untitled Project (1).jpg'
 
 const Work = () => {
   
@@ -23,6 +23,8 @@ const Work = () => {
                   <a href="https://movie-app-yeh.netlify.app/" className='underline-none'>
                     <span className="text-3xl text-white text-gradient">YEH Movie Web App</span>
                   </a>
+                  
+                 
                 </div>
               </div>
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl mt-6">

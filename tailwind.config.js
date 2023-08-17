@@ -6,6 +6,7 @@ export default {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
+      cursi: 'cursive'
     },
     container: {
       padding: {
