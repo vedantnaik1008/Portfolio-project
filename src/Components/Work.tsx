@@ -1,4 +1,5 @@
-import img1 from '../images/Untitled Project (1).jpg'
+import img1 from '../images/canva-design-movie.png'
+import img2 from '../images/Game-canva.png'
 
 const Work = () => {
   
@@ -18,10 +19,10 @@ const Work = () => {
               </div>
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl mt-6">
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-100"></div>
-                  <img className='group-hover:scale-125 transition-all duration-500 w-[100%] h-[400px] object-cover'  src={img1} alt="project-img" />
+                  <img className='group-hover:scale-125 transition-all duration-500 w-[100%] h-[400px] object-cover'  src={img2} alt="project-img" />
                 <div className="absolute -bottom-full left-12 group-hover:bottom-10 transition-all duration-500 z-50">
                   <a href="https://movie-app-yeh.netlify.app/" className='underline-none'>
-                    <span className="text-3xl text-white text-gradient">YEH Movie Web App</span>
+                    <span className="text-3xl text-white text-gradient">Game Store Web App</span>
                   </a>
                   
                  
