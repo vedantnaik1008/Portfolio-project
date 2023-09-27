@@ -6,11 +6,13 @@ import JS from '../images/js.png'
 import TS from '../images/typescript.png'
 import react from '../images/react-js-icon.png'
 import next from '../images/communityIcon_nsrozhr9igl91.png'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../variants'
 
 const Skills = () => {
   return (
     <section className="section" id="skills">
-      <div className="container mx-auto">
+      <motion.div className="container mx-auto" variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}>
         <h2 className="h2 leading-tight text-center text-[#0F1419]">My Skills</h2>
         <div className="flex flex-wrap gap-8 justify-center mt-[50px]">
           
@@ -47,7 +49,7 @@ const Skills = () => {
           </div>
 
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

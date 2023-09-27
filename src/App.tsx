@@ -9,12 +9,12 @@ import Work from './Components/Work'
 const App = () => {
   return (
     <div className="bg-[#FFFFFF] bg-no-repeat bg-cover overflow-hidden">
-        <Header />
-        <Banner />
-        <Skills />
-        <About />
-        <Work />
-        <Contact />
+      <Header />
+      <Banner />
+      <Skills />
+      <About />
+      <Work />
+      <Contact />
     </div>
   )
 }

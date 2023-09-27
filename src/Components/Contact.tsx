@@ -2,6 +2,7 @@ import {motion} from 'framer-motion'
 import emailjs from 'emailjs-com'; // Import the EmailJS library
 import { fadeIn } from '../variants'
 import { useState } from 'react';
+import { FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -59,12 +60,18 @@ const Contact = () => {
             </div>
           </motion.div>
           <motion.form  onSubmit={handleSubmit}  variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}  className="flex-1 border border-black rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start bg-black">
-          <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#71767B] transition-all " placeholder='Your name' type='text' name='from_name' value={name} onChange={e => setName(e.target.value)} />
-            <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#71767B] transition-all " placeholder='Your email' type='email' name='from_email' value={email} onChange={e => setEmail(e.target.value)} />
-            <textarea className='bg-transparent border-b py-12 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#71767B] transition-all resize-none mb-12' placeholder='Your message' name='message' value={message} onChange={e => setMessage(e.target.value)} />
-            <button className="btn-tweet bg-[#1d9bf0]  btn-lg hover:opacity-70 transition-all duration-100" type='submit' disabled={isSubmitting}>
-              {isSubmitting ? 'Submitting...' : 'Submit'}
-            </button>
+          <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#1d9bf0] transition-all " placeholder='Your name' type='text' name='from_name' value={name} onChange={e => setName(e.target.value)} />
+            <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#1d9bf0] transition-all " placeholder='Your email' type='email' name='from_email' value={email} onChange={e => setEmail(e.target.value)} />
+            <textarea className='bg-transparent border-b py-12 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#1d9bf0] transition-all resize-none mb-12' placeholder='Your message' name='message' value={message} onChange={e => setMessage(e.target.value)} />
+            <div className="flex flex-col gap-4 min-[425px]:flex-row">
+              <button className="btn-tweet bg-[#1d9bf0]  btn-lg hover:opacity-70 transition-all duration-100" type='submit' disabled={isSubmitting}>
+                {isSubmitting ? 'Submitting...' : 'Submit'}
+              </button>
+              <span className='text-white flex items-center justify-center font-semibold'>Or Dm On</span>
+              <a href="https://twitter.com/vedantnaik108" className='btn-tweet bg-[#1d9bf0] flex items-center justify-center btn-lg hover:opacity-70 transition-all duration-100'>
+              <FaTwitter size="28px"/>
+              </a>
+            </div>
           </motion.form>
         </div>
       </div>

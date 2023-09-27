@@ -1,10 +1,5 @@
 import Image from '../images/web-programming-languages.webp'
-
-import {  FaTwitter } from 'react-icons/fa'
-
-
 import {motion} from 'framer-motion'
-
 import {fadeIn} from '../variants'
 import { Link } from 'react-scroll'
 
@@ -20,11 +15,6 @@ const Banner = () => {
             <motion.div variants={fadeIn('right', 0.6)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
               <Link to='contact' offset={-40} smooth={true}
                     spy={true}><button className='btn-tweet bg-[#1d9bf0] btn-lg hover:opacity-70 transition-all duration-100'>Contact me</button></Link>
-            </motion.div>
-            <motion.div variants={fadeIn('right', 0.7)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.7}} className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">            
-              <a href="https://twitter.com/vedantnaik108" className='bg-[#1d9bf0] p-2 rounded-md hover:opacity-70 transition-all duration-100'>
-              <FaTwitter />
-              </a>
             </motion.div>
           </div>
 
