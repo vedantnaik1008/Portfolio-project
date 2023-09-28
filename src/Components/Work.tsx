@@ -40,7 +40,7 @@ const Work = () => {
           <div className="w-[100%] h-full">
             <h1 className="text-center text-white text-2xl underline underline-offset-8">{Modal.title}</h1>
             <div className="mt-[40px]">
-              <p className="mb-[10px]">Teach Stack: <span className='text-white text-medium font-cursi font-bold'>{Modal.teckStack.join(", ")}</span></p>
+              <p className="mb-[10px]">Tech Stack: <span className='text-white text-medium font-cursi font-bold'>{Modal.teckStack.join(", ")}</span></p>
               <p className="">Project: <a href={Modal.anchor} className='text-white hover:underline font-cursi font-bold'>Watch live</a></p>
               <p className="">Code: <a href={Modal.github} className='text-white hover:underline font-cursi font-bold'>Visit</a></p>
             </div>
