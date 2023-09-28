@@ -6,7 +6,7 @@ import video2 from "../video/movie-app-yeh.mp4";
 import {MdClose} from "react-icons/md"
 const projectData = [
   {id:"1", image: img1, teckStack: ["HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS",], title: "Yeh Movie Web App", video: video2, anchor:'https://movie-app-yeh.netlify.app/', github: 'https://github.com/vedantnaik1008/react-movie-search-app'},
-  {id:"2", image: img2, teckStack: ["HTML", "CSS", "TAILWIND", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS", "NEXT.JS", "MY SQL", "ZUSTAND"], title: "Ai Genius", video: video, anchor:'nothing', github: 'https://github.com/vedantnaik1008/my-app'}
+  {id:"2", image: img2, teckStack: ["HTML", "CSS", "TAILWIND", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS", "NEXT.JS", "MY SQL", "ZUSTAND, STRIPE"], title: "Ai Genius", video: video, anchor:'nothing', github: 'https://github.com/vedantnaik1008/my-app'}
 ]
 
 const Work = () => {
