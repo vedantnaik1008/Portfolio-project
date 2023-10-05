@@ -31,8 +31,8 @@ const Work = () => {
       </div>
       
       {isClicked && projectData.map((Modal) => Modal.id === isClicked && (<div key={Modal.id} className='fixed inset-0 z-50 bg-transparent backdrop-blur-xl h-[100%] w-[100%] text-white m-auto flex items-center'>
-        <div className="relative bg-[black] min-[320px]:w-[90%]   md:h-[70%] md:w-[75%] text-white mx-auto rounded-lg p-4">
-        <button onClick={() => setIsClicked('')}  className='drop-shadow-2xl rounded-full w-[40px] h-[40px] bg-black text-xl absolute min-[320px]:right-[45%]  min-[320px]:-top-12 md:-right-20 md:-top-10 flex items-center justify-center'><MdClose size="28px" color="white"/></button>
+        <div className="relative bg-[black] min-[320px]:w-[90%] min-[500px]:w-[75%]  md:h-[70%] md:w-[75%] text-white mx-auto rounded-lg p-4">
+        <button onClick={() => setIsClicked('')}  className='drop-shadow-2xl rounded-full w-[40px] h-[40px] bg-black text-xl absolute min-[320px]:right-[40%]  min-[320px]:-top-12 min-[500px]:-right-12 min-[500px]:-top-4 md:-right-20 md:-top-10 flex items-center justify-center'><MdClose size="28px" color="white"/></button>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-full">
           <div className="">
             <video src={Modal.video} className="w-[100%] h-full" controls></video>
