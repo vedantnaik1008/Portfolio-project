@@ -23,7 +23,7 @@ const Work = () => {
               <div onClick={() => setIsClicked(project.id)} className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-100"></div>
                 <img className='group-hover:scale-125 transition-all duration-500 w-[100%] h-[400px] object-cover'  src={project.image} alt="project-img" />
               <div className="absolute -top-[50%] left-[40%] group-hover:top-[50%] transition-all duration-500 z-50">
-                  <span className="text-3xl text-white text-gradient">Click</span>
+                  <span onClick={() => setIsClicked(project.id)} className="text-3xl text-white text-gradient">Click</span>
               </div>
             </div>
           ))}
