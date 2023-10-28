@@ -34,11 +34,11 @@ const Navbar: React.FC = () => {
                     </Link>
         </div>  
       </div>
-      <div className="flex flex-col gap-1 min-[320px]-block md:hidden absolute top-2 right-5 bg-black p-2 rounded-md" onClick={()=> setShow(!show)}>
+      <div className="flex flex-col gap-1 min-[320px]-block md:hidden absolute top-5 right-5  " onClick={()=> setShow(!show)}>
         {/* <FaBars /> */}
-        <span className="w-[20px] h-[2px] bg-white rounded-sm"></span>
-        <span className="w-[20px] h-[3px] bg-white rounded-sm"></span>
-        <span className="w-[20px] h-[2px] bg-white rounded-sm"></span>
+        <span className="w-[25px] h-[4px] bg-black rounded-sm"></span>
+        <span className="w-[18px] h-[4px] ml-auto bg-black rounded-sm"></span>
+        <span className="w-[10px] h-[4px] ml-auto bg-black rounded-sm"></span>
       </div>
       {show && (
         <nav className="absolute top-[50px] left-0 h-[100vh] w-[100%] bg-white rounded-sm md:hidden">
