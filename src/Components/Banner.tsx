@@ -13,7 +13,7 @@ const Banner = () => {
          
             <motion.p variants={fadeIn('right', 0.5)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.7}} className='my-8 max-w-lg mx-auto lg:mx-[0px] text-white font-medium'>I am a frontend developer with no degree, but I have skills. If you are interested in my skills, please contact me or message me on Twitter.</motion.p>
             <motion.div variants={fadeIn('right', 0.6)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <Link to='contact' offset={-40} smooth={true}
+              <Link to='contact' offset={-39} smooth={true}
                     spy={true}><button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>Contact me</button></Link>
             </motion.div>
           </div>
