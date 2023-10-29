@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
                     spy={true} offset={15} className='cursor-pointer  active text-white'>
                         Projects
                     </Link>
-                    <Link to='contact' offset={-40} activeClass='active-on'
+                    <Link to='contact' offset={-39} activeClass='active-on'
                     smooth={true}
                     spy={true} className='cursor-pointer  active text-white'>
                         Contact

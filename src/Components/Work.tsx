@@ -17,14 +17,14 @@ const Work = () => {
   return (
     <>
     <section className="section-two" id="work">
-      <div className="container mx-auto">
+      <div className="w-[90%] mx-auto">
         <h2 className="h2 leading-tight text-center text-white mt-6">My Latest Projects</h2>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
 
           {projectData.map((project) => (
             <div key={project.id} className="group relative overflow-hidden border-[2px] border-[#5a5a5a] rounded-xl mt-6">
               <div onClick={() => setIsClicked(project.id)} className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-100"></div>
-                <img loading="lazy" className='group-hover:scale-125 transition-all duration-500 w-[100%] h-[400px] object-cover' src={project.image} alt="project-img" />
+                <img loading="lazy" width="576px" height="400px" className='group-hover:scale-125 transition-all duration-500 w-[100%] h-[400px] object-cover' src={project.image} alt="project-img" />
               <div className="absolute -top-[50%] left-[40%] group-hover:top-[50%] transition-all duration-500 z-40">
                   <span onClick={() => setIsClicked(project.id)} className="text-3xl text-white text-gradient">Click</span>
               </div>
