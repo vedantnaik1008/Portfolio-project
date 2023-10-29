@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import img1 from '../images/canva-design-movie.png';
-import img2 from '../images/Untitled design.png';
 import img3 from '../images/QuickKart.png';
-import video from "../video/km_20230907_2160p_60f_20230907_190448.mp4";
 import video2 from "../video/movie-app-yeh.mp4";
 import video3 from "../video/QickKart.webm";
 import {MdClose} from "react-icons/md"
