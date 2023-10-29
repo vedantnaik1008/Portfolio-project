@@ -18,7 +18,7 @@ const About = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}  className="md:flex-1 bg-contain bg-no-repeat  bg-top">
-            <img src={img} alt="img" className='md:block'/>
+            <img src={img} alt="img" className='md:block rounded-full'/>
           </motion.div>
           <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}} className="flex-1">
             <h2 className="h2 text-white">About me.</h2>

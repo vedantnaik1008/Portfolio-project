@@ -5,6 +5,7 @@ import JS from '../images/js.png'
 import TS from '../images/typescript.png'
 import react from '../images/react-js-icon.png'
 import next from '../images/communityIcon_nsrozhr9igl91.png'
+import redux from '../images/redux.png'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
@@ -37,6 +38,10 @@ const Skills = () => {
 
           <div className="rounded-xl border-[#5a5a5a] border-[2px] p-8 hover:opacity-70  transition duration-1500 ease-in">
             <img src={react} alt="react" className='h-[100px]' />
+          </div>
+
+          <div className="rounded-xl border-[#5a5a5a] border-[2px] p-8 hover:opacity-70  transition duration-1500 ease-in">
+            <img src={redux} alt="react" className='h-[100px]' />
           </div>
 
           <div className="rounded-xl border-[#5a5a5a] border-[2px] p-8  hover:opacity-70  transition duration-1500 ease-in">
