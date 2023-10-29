@@ -8,7 +8,7 @@ import Work from './Components/Work'
 
 const App = () => {
   return (
-    <div className="bg-[#FFFFFF] bg-no-repeat bg-cover overflow-hidden">
+    <div className="bg-[#131313]  overflow-hidden">
       <Header />
       <Banner />
       <Skills />

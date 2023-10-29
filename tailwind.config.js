@@ -3,10 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
-      cursi: 'cursive'
+      primary: 'Manrope',
+      secondary: 'Manrope',
+      tertiary: 'Manrope',
+      cursi: 'Manrope'
     },
     container: {
       padding: {

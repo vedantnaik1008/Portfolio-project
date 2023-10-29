@@ -2,7 +2,6 @@ import {motion} from 'framer-motion'
 import emailjs from 'emailjs-com'; // Import the EmailJS library
 import { fadeIn } from '../variants'
 import { useState } from 'react';
-import { FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -55,21 +54,21 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row">
           <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}  className="flex-1 flex justify-start items-center">
             <div className="">
-              <h4 className='text-xl uppercase text-[#0F1419] font-medium mb-2 tracking-wide'>Get in touch</h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12 text-[#0F1419]">Let's work <br /> together!</h2>
+              <h4 className='text-xl uppercase text-white font-medium mb-2 tracking-wide'>Get in touch</h4>
+              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12 text-white">Let's work <br /> together!</h2>
             </div>
           </motion.div>
-          <motion.form  onSubmit={handleSubmit}  variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}  className="flex-1 border border-black rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start bg-black">
-          <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#1d9bf0] transition-all " placeholder='Your name' type='text' name='from_name' value={name} onChange={e => setName(e.target.value)} />
-            <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#1d9bf0] transition-all " placeholder='Your email' type='email' name='from_email' value={email} onChange={e => setEmail(e.target.value)} />
-            <textarea className='bg-transparent border-b py-12 outline-none w-full text-white placeholder:text-[#FFFFFF] focus:border-[#1d9bf0] transition-all resize-none mb-12' placeholder='Your message' name='message' value={message} onChange={e => setMessage(e.target.value)} />
+          <motion.form  onSubmit={handleSubmit}  variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}  className="flex-1 border border-[#5a5a5a] rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start bg-[#181818]">
+          <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-white focus:border-[#5a5a5a] transition-all " placeholder='Your name' type='text' name='from_name' value={name} onChange={e => setName(e.target.value)} />
+            <input className="bg-transparent border-b py-5 outline-none w-full text-white placeholder:text-white focus:border-[#5a5a5a] transition-all " placeholder='Your email' type='email' name='from_email' value={email} onChange={e => setEmail(e.target.value)} />
+            <textarea className='bg-transparent border-b py-12 outline-none w-full text-white placeholder:text-white focus:border-[#5a5a5a] transition-all resize-none mb-12' placeholder='Your message' name='message' value={message} onChange={e => setMessage(e.target.value)} />
             <div className="flex flex-col gap-4 min-[425px]:flex-row">
-              <button className="btn-tweet bg-[#1d9bf0]  btn-lg hover:opacity-70 transition-all duration-100" type='submit' disabled={isSubmitting}>
+              <button className="btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out" type='submit' disabled={isSubmitting}>
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
               <span className='text-white flex items-center justify-center font-semibold'>Or Dm On</span>
-              <a href="https://twitter.com/vedantnaik108" className='btn-tweet bg-[#1d9bf0] flex items-center justify-center btn-lg hover:opacity-70 transition-all duration-100'>
-              <FaTwitter size="28px"/>
+              <a href="https://twitter.com/vedantnaik108" className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out flex items-center justify-center '>
+              <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg>
               </a>
             </div>
           </motion.form>

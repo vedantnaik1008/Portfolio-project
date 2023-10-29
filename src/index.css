@@ -11,6 +11,7 @@
     #406aff 117.04%
   );
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  background-color: #131313;
 }
 
 .btn:hover {
@@ -30,7 +31,7 @@
 
 .gradient,
 .active:hover::before {
- background-color: #1d9bf0;
+ background-color: white;
  position: absolute;
  content: '';
  right: 0;
@@ -40,7 +41,7 @@
 }
 
 .active-on::before{
-  background-color: #1d9bf0;
+  background-color: white;
   position: absolute;
   content: '';
   right: 0;
@@ -50,7 +51,7 @@
 }
 
 .shad{
-  box-shadow: 0px 2px 4px rgb(35, 34, 34);
+  box-shadow: 0px 2px 4px #5a5a5a;
 }
 
 .slick-prev, .slick-next {
@@ -75,7 +76,7 @@
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   color: black; 
   outline: none;
-  background-color: black
+  background-color: black;
 }
 
 @layer base {
@@ -89,10 +90,10 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full font-primary text-[#131313] font-medium;
   }
   .btn-tweet {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full font-primary text-[#131313] font-semibold;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
