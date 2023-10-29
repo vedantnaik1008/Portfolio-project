@@ -11,7 +11,11 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Prevent multiple submissions
+    if(!name || !email || !message){
+      alert('Please fill in name, email and message fields');
+      return;
+    }
+
     if (isSubmitting) {
       return;
     }
@@ -50,7 +54,7 @@ const Contact = () => {
   };
   return (
     <section className="py-16 mt-28 lg:section" id="contact">
-      <div className="container mx-auto">
+      <div className="w-[90%] mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}  className="flex-1 flex justify-start items-center">
             <div className="">
