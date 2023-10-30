@@ -7,7 +7,7 @@ import {MdClose} from "react-icons/md"
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
 const projectData = [
-  {id:"1", image: img3, teckStack: ["TAILWIND", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS", "NEXT.JS", "REDUX", "HANKO AUTH","STRIPE"], title: "QuickKart", video: video3, anchor:'https://quickkart.netlify.app/', github: 'https://github.com/vedantnaik1008/Ecommerce'},
+  {id:"1", image: img3, teckStack: ["TAILWIND", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS", "NEXT.JS", "REDUX", "HANKO AUTH","STRIPE"], title: "QuickKart", video: video3, anchor:'https://quickkart3.netlify.app/', github: 'https://github.com/vedantnaik1008/Ecommerce'},
   {id:"2", image: img1, teckStack: ["HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS",], title: "Yeh Movie Web App", video: video2, anchor:'https://movie-app-yeh.netlify.app/', github: 'https://github.com/vedantnaik1008/react-movie-search-app'},
 ]
 
