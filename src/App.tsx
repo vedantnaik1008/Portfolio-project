@@ -1,6 +1,6 @@
 import { lazy } from 'react'
-import About from './Components/About'
-import Banner from './Components/Banner'
+const About = lazy(() => import('./Components/About.tsx'));
+const Banner = lazy(() => import('./Components/Banner.tsx'));
 const Contact = lazy(() => import('./Components/Contact.tsx'));
 import Header from './Components/Header'
 const Skills = lazy(() => import('./Components/Skills.tsx'));
