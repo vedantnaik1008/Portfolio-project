@@ -39,9 +39,9 @@ const Navbar: React.FC = () => {
         <span className="w-[18px] h-[4px] ml-auto bg-white rounded-sm"></span>
         <span className="w-[10px] h-[4px] ml-auto bg-white rounded-sm"></span>
       </div>
-      {show && (
-        <nav className="absolute top-[50px] left-0  w-[100%] bg-[#131313] rounded-sm md:hidden">
-          <div className={show ? "h-[100vh] xs:transition-all xs:duration-500 xs:ease-out xs:translate-y-[0%] md:hidden max-w-7xl mx-auto xs:p-4" : "h-[100vh] xs:translate-y-full xs:transition-all xs:duration-500 xs:ease-out  md:hidden max-w-7xl mx-auto px-2 sm:px-6 "}>
+      {show ? (
+        <div className="absolute top-[50px] left-0  w-[100%] bg-[#131313] rounded-sm md:hidden">
+          <div className={show ? "h-[100vh] xs:transition-all xs:duration-500 xs:ease-out xs:translate-y-0 md:hidden max-w-7xl mx-auto xs:p-4" : "h-[100vh] xs:translate-y-full xs:transition-all xs:duration-500 xs:ease-out  max-w-7xl mx-auto px-2 sm:px-6 "}>
           <div className="flex flex-col items-start sm:items-center justify-center gap-4 p-1" onClick={()=> setShow(!show)}>
                     <Link to='home' 
                       smooth={true}
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
                       </Link>
           </div>  
                 </div>
-        </nav>)}
+        </div>) : null}
     </nav>
   );
 };
