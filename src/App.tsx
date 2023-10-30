@@ -1,9 +1,10 @@
+import { lazy } from 'react'
 import About from './Components/About'
 import Banner from './Components/Banner'
-import Contact from './Components/Contact'
+const Contact = lazy(() => import('./Components/Contact.tsx'));
 import Header from './Components/Header'
-import Skills from './Components/Skills'
-import Work from './Components/Work'
+const Skills = lazy(() => import('./Components/Skills.tsx'));
+const Work = lazy(() => import('./Components/Work.tsx'));
 
 const App = () => {
   return (
