@@ -35,7 +35,6 @@ const Navbar: React.FC = () => {
         </div>  
       </div>
       <div className="flex flex-col gap-1 md:hidden absolute top-5 right-5  " onClick={()=> setShow(!show)}>
-        {/* <FaBars /> */}
         <span className="w-[25px] h-[4px] bg-white rounded-sm"></span>
         <span className="w-[18px] h-[4px] ml-auto bg-white rounded-sm"></span>
         <span className="w-[10px] h-[4px] ml-auto bg-white rounded-sm"></span>

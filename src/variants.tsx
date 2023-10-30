@@ -18,3 +18,13 @@ export const fadeIn = (direction:'up' | 'down' | 'left' | 'right' , delay: numbe
       },
     };
   };
+
+  const isMobile = window.innerWidth <= 768;
+ export const animationProps = isMobile
+    ? { }
+    : {
+      variants: fadeIn('up', 0.3),
+      initial: 'hidden',
+      whileInView: 'show',
+      viewport: { once: true, amount: 0.3 }
+      };

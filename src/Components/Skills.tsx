@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
+import { animationProps} from '../variants'
 import { SiNextdotjs, SiJavascript, SiTailwindcss, SiTypescript, SiReact, SiRedux, SiHtml5, SiCss3 } from 'react-icons/si'
 const Icons = [
   {id: '1', icon: <SiHtml5 size={50}/>},
@@ -13,9 +13,10 @@ const Icons = [
 ]
 
 const Skills = () => {
+
   return (
     <section className="section" id="skills">
-      <motion.div className="container mx-auto" variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: true, amount: 0.3}}>
+      <motion.div className="container mx-auto"  {...animationProps}>
         <h2 className="h2 leading-tight text-center text-white">My Skills</h2>
         <div className="flex flex-wrap gap-[60px] justify-center mt-[50px]">
             {Icons.map((icon) => (
