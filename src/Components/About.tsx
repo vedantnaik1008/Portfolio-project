@@ -18,7 +18,7 @@ const About = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           <m.div {...animationProps}  className="md:flex-1 bg-contain bg-no-repeat  bg-top">
-            <img loading='lazy' src={img} alt="img" className='xs:invisible md:visible rounded-full'/>
+            <img width={'545px'} height={'341px'} loading='lazy' src={img} alt="img" className='xs:invisible md:visible rounded-full'/>
           </m.div>
           <m.div {...animationProps} className="flex-1">
             <h2 className="h2 text-white">About me.</h2>

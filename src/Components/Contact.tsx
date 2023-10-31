@@ -56,8 +56,8 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row">
           <m.div {...animationProps}  className="flex-1 flex justify-start items-center">
             <div className="">
-              <h4 className='text-xl uppercase text-white font-medium mb-2 tracking-wide'>Get in touch</h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12 text-white">Let's work <br /> together!</h2>
+              <h2 className='text-xl uppercase text-white font-medium mb-2 tracking-wide'>Get in touch</h2>
+              <h4 className="text-[45px] lg:text-[90px] leading-none mb-12 text-white">Let's work <br /> together!</h4>
             </div>
           </m.div>
           <m.form  onSubmit={handleSubmit}  {...animationProps}  className="flex-1 border border-[#5a5a5a] rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start bg-[#181818]">

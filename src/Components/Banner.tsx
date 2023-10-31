@@ -19,7 +19,7 @@ const Banner = () => {
           </div>
 
           <m.div {...animationProps} className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-            <img loading='lazy' src={Image} alt="person-img" className='rounded-full'/>
+            <img loading='lazy' width={'482px'} height={'361px'} src={Image} alt="person-img" className='rounded-full'/>
           </m.div>
         </div>
       </div>
