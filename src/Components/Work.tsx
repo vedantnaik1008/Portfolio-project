@@ -4,7 +4,7 @@ import img3 from '../images/QuickKart.png';
 import video2 from "../video/movie-app-yeh.mp4";
 import video3 from "../video/QickKart.webm";
 import {MdClose} from "react-icons/md"
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { animationProps } from '../variants';
 const projectData = [
   {id:"1", image: img3, teckStack: ["TAILWIND", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS", "NEXT.JS", "REDUX", "HANKO AUTH","STRIPE"], title: "QuickKart", video: video3, anchor:'https://quickkart3.netlify.app/', github: 'https://github.com/vedantnaik1008/Ecommerce'},
@@ -18,7 +18,7 @@ const Work = () => {
     <section className="section-two" id="work">
       <div className="w-[90%] mx-auto">
         <h2 className="h2 leading-tight text-center text-white mt-6">My Latest Projects</h2>
-        <motion.div {...animationProps} className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
+        <m.div {...animationProps} className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
           {projectData.map((project) => (
             <div key={project.id} className="group relative overflow-hidden border-[2px] border-[#5a5a5a] rounded-xl mt-6">
               <div onClick={() => setIsClicked(project.id)} className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-100"></div>
@@ -28,7 +28,7 @@ const Work = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
       
       {isClicked && projectData.map((Modal) => Modal.id === isClicked && (<div key={Modal.id} className='fixed inset-0 z-50 bg-transparent backdrop-blur-3xl h-[100%] w-[100%] text-white m-auto flex items-center'>

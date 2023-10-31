@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { animationProps} from '../variants'
 import { SiNextdotjs, SiJavascript, SiTailwindcss, SiTypescript, SiReact, SiRedux, SiHtml5, SiCss3 } from 'react-icons/si'
 const Icons = [
@@ -16,14 +16,14 @@ const Skills = () => {
 
   return (
     <section className="section" id="skills">
-      <motion.div className="container mx-auto"  {...animationProps}>
+      <m.div className="container mx-auto"  {...animationProps}>
         <h2 className="h2 leading-tight text-center text-white">My Skills</h2>
         <div className="flex flex-wrap gap-[60px] justify-center mt-[50px]">
             {Icons.map((icon) => (
                <div key={icon.id} className="text-[#FFFFFF]  hover:opacity-70  transition duration-1500 ease-in">{icon.icon}</div>
             ))}
         </div>
-      </motion.div>
+      </m.div>
     </section>
   )
 }

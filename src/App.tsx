@@ -5,16 +5,19 @@ const Contact = lazy(() => import('./Components/Contact.tsx'));
 import Header from './Components/Header'
 const Skills = lazy(() => import('./Components/Skills.tsx'));
 const Work = lazy(() => import('./Components/Work.tsx'));
+import { LazyMotion, domAnimation } from 'framer-motion';
 
 const App = () => {
   return (
     <div className="bg-[#131313]  overflow-hidden">
       <Header />
-      <Banner />
-      <Skills />
-      <About />
-      <Work />
-      <Contact />
+      <LazyMotion features={domAnimation}>
+        <Banner />
+        <Skills />
+        <About />
+        <Work />
+        <Contact />
+      </LazyMotion>
     </div>
   )
 }
