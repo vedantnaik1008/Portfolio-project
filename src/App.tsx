@@ -1,10 +1,9 @@
-import { lazy } from 'react'
-const About = lazy(() => import('./Components/About.tsx'));
-const Banner = lazy(() => import('./Components/Banner.tsx'));
-const Contact = lazy(() => import('./Components/Contact.tsx'));
 import Header from './Components/Header'
-const Skills = lazy(() => import('./Components/Skills.tsx'));
-const Work = lazy(() => import('./Components/Work.tsx'));
+import About from './Components/About.tsx'
+import Banner from './Components/Banner.tsx'
+import Contact from './Components/Contact.tsx'
+import Skills from './Components/Skills.tsx'
+import Work from './Components/Work.tsx'
 import { LazyMotion, domAnimation } from 'framer-motion';
 
 const App = () => {
