@@ -2,7 +2,7 @@ import Countup from 'react-countup'
 import {useInView} from 'react-intersection-observer'
 import { m } from 'framer-motion'
 import {animationProps} from '../variants'
-import img from '../images/10-Skill-yang-Harus-Dimiliki-Front-End-Developer.jpg'
+import img from '../images/10-Skill-yang-Harus-Dimiliki-Front-End-Developer.webp'
 import { Link } from 'react-scroll'
 
 const About = () => {
