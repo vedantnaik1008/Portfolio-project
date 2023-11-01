@@ -39,7 +39,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <Link to='contact' offset={-28} smooth={true}
+              <Link href='contact' to='contact' offset={-28} smooth={true}
                     spy={true}><button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>Contact Me</button></Link>
             </div>
           </m.div>

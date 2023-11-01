@@ -7,27 +7,27 @@ const Navbar: React.FC = () => {
     <nav className="">
       <div className="xs:hidden md:block max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="md:flex md:items-center md:justify-center md:gap-8 md:h-16">
-                  <Link to='home' activeClass='active-on'
+                  <Link href="home" to='home' activeClass='active-on'
                     smooth={true}
                     spy={true} offset={-200} className='cursor-pointer active text-white'>
                         Home
                     </Link>
-                    <Link to='skills' activeClass='active-on'
+                    <Link href='skills' to='skills' activeClass='active-on'
                     smooth={true}
                     spy={true} offset={-10} className='cursor-pointer active text-white'>
                         Skills 
                     </Link>
-                    <Link to='about'activeClass='active-on'
+                    <Link href='about' to='about'activeClass='active-on'
                     smooth={true}
                     spy={true}  className='cursor-pointer  active text-white'>
                         About
                     </Link>
-                    <Link to='work' activeClass='active-on'
+                    <Link href='work' to='work' activeClass='active-on'
                     smooth={true}
                     spy={true} offset={15} className='cursor-pointer  active text-white'>
                         Projects
                     </Link>
-                    <Link to='contact' offset={-28} activeClass='active-on'
+                    <Link href='contact' to='contact' offset={-28} activeClass='active-on'
                     smooth={true}
                     spy={true} className='cursor-pointer  active text-white'>
                         Contact
@@ -43,27 +43,27 @@ const Navbar: React.FC = () => {
         <div className="absolute top-[50px] left-0  w-[100%] bg-[#131313] rounded-sm md:hidden">
           <div className={show ? "h-[100vh] xs:transition-all xs:duration-500 xs:ease-out xs:translate-y-0 md:hidden max-w-7xl mx-auto xs:p-4" : "h-[100vh] xs:translate-y-full xs:transition-all xs:duration-500 xs:ease-out  max-w-7xl mx-auto px-2 sm:px-6 "}>
           <div className="flex flex-col items-start sm:items-center justify-center gap-4 p-1" onClick={()=> setShow(!show)}>
-                    <Link to='home' 
+                    <Link href='home' to='home' 
                       smooth={true}
                       spy={true} offset={-200} className='cursor-pointer active text-white'>
                           Home
                       </Link>
-                      <Link to='skills' 
+                      <Link href='skills' to='skills' 
                       smooth={true}
                       spy={true} offset={-20} className='cursor-pointer active text-white'>
                           Skills
                       </Link>
-                      <Link to='about' 
+                      <Link href='about' to='about' 
                       smooth={true}
                       spy={true}  className='cursor-pointer  active text-white'>
                           About
                       </Link>
-                      <Link to='work' 
+                      <Link href='work' to='work' 
                       smooth={true}
                       spy={true} offset={5} className='cursor-pointer  active text-white'>
                           Projects
                       </Link>
-                      <Link to='contact' 
+                      <Link href='contact' to='contact' 
                       smooth={true}
                       spy={true} offset={-10} className='cursor-pointer  active text-white'>
                           Contact
